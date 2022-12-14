@@ -12,7 +12,9 @@ then
         
         # brew86
         echo 'alias brew86="arch -x86_64 /usr/local/bin/brew"' >> ~/.zshrc
+        sleep 5
         source ~/.zshrc
+        sleep 5
 
         echo
         echo "> pyenv gcc zlib bzip2 ncurses SQLite3 Install.."
@@ -42,7 +44,9 @@ then
         # pyenv86
         GCC_NAME=$(ls -al /usr/local/bin | awk "{print $9}" | grep "^gcc-[0-9]")
         echo 'alias pyenv86="CC=`which $GCC_NAME` pyenv"' >> ~/.zshrc
+        sleep 5
         source ~/.zshrc
+        sleep 5
         
         echo "=============== Info ==============="
         echo "> Version Info."
