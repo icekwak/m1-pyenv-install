@@ -29,6 +29,7 @@ then
         # zlib
         echo 'export LDFLAGS="-L/usr/local/opt/zlib/lib $LDFLAGS"' >> ~/.zshrc
         echo 'export CPPFLAGS="-I/usr/local/opt/zlib/include $CPPFLAGS"' >> ~/.zshrc
+        echo 'export PKG_CONFIG_PATH="/usr/local/opt/zlib/lib/pkgconfig:$PKG_CONFIG_PATH"' >> ~/.zshrc
         
         # bzip
         echo 'export PATH="/usr/local/opt/bzip2/bin:$PATH"' >> ~/.zshrc
@@ -39,11 +40,13 @@ then
         echo 'export PATH="/usr/local/opt/ncurses/bin:$PATH"' >> ~/.zshrc
         echo 'export LDFLAGS="-L/usr/local/opt/ncurses/lib $LDFLAGS"' >> ~/.zshrc
         echo 'export CPPFLAGS="-I/usr/local/opt/ncurses/include $CPPFLAGS"' >> ~/.zshrc
+        echo 'export PKG_CONFIG_PATH="/usr/local/opt/ncurses/lib/pkgconfig:$PKG_CONFIG_PATH"' >> ~/.zshrc
         
         # sqlite
         echo 'export PATH="/usr/local/opt/sqlite/bin:$PATH"' >> ~/.zshrc
         echo 'export LDFLAGS="-L/usr/local/opt/sqlite/lib $LDFLAGS"' >> ~/.zshrc
         echo 'export CPPFLAGS="-I/usr/local/opt/sqlite/include $CPPFLAGS"' >> ~/.zshrc
+        echo 'export PKG_CONFIG_PATH="/usr/local/opt/sqlite/lib/pkgconfig:$PKG_CONFIG_PATH"' >> ~/.zshrc
         
         echo "#################################################" >> ~/.zshrc
         source ~/.zshrc
