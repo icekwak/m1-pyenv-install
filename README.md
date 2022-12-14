@@ -9,3 +9,7 @@ curl -LJ -o ~/install.sh "https://github.com/icekwak/m1-python-install/blob/main
 
 pyenv86 install {Python Version}
 ```
+
+# Update
+Homebrew 3.6.13  
+pyenv 2.3.7
